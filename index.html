@@ -53,9 +53,18 @@
 								<div class="row">
 									<div class="col-sm">
 										<div class="form-group">
-											<label for="nilai"><strong>Nilai</strong></label>
-											<textarea type="text" class="form-control text-primary" id="nilai" name="nilai"
-												placeholder="Nilai" rows="3"></textarea>
+											<label for="harga"><strong>Harga</strong></label>
+											<textarea type="text" class="form-control text-primary" id="harga" name="harga"
+												placeholder="Harga" rows="3"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm">
+										<div class="form-group">
+											<label for="rating"><strong>Rating</strong></label>
+											<textarea type="text" class="form-control text-primary" id="rating" name="rating"
+												placeholder="Rating" rows="3"></textarea>
 										</div>
 									</div>
 								</div>
@@ -213,7 +222,7 @@
 			.addTo(map);
 
 		// Submit to google spreadsheet
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbwoK6vd-7zsNebCa57Kz0yDn4T0lKpCNexoONQnYl0vlLRcoXIOWyiF94qUrpisC0-fjQ/exec';
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbxI1WN2LZGSiq7vzOYD05MljCDWw39BQDwPglet_uNtMymZVc-OGvf0zB0zEygCC7A3Dw/exec';
 		const form = document.forms['submit-to-google-sheet'];
 		const btnSimpan = document.querySelector('.btn-simpan');
 		const btnLoading = document.querySelector('.btn-loading');
