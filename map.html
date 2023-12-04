@@ -47,8 +47,7 @@
 			var point = L.geoJson(null, {
 				onEachFeature: function (feature, layer) {
 					var popupContent = "<h4>" + feature.properties.nama + "</h4>" +
-						"<p>" + feature.properties.deskripsi + "</p>" 
-						"<p>" + feature.properties.nilai + "</p>";
+						"<p>" + feature.properties.deskripsi + "</p>";
 					layer.on({
 						click: function (e) {
 							point.bindPopup(popupContent);
@@ -56,7 +55,7 @@
 					}); 
 				},
 			});
-			$.getJSON("https://script.google.com/macros/s/AKfycbzfQ_aOaSFIqVR-T6OICwgJqkGeS3rXq9TAHqGIkm39yE4wxATDXQYUymiXC8ZNEavbdQ/exec", function (data) {
+			$.getJSON("https://script.google.com/a/macros/mail.ugm.ac.id/s/AKfycbyhg2TnoCGcN8iUmgN6jx3ez-lbfWEzeizEUHcICZeu6GdCFBe3a7_PkarqawqNVgbtnA/exec", function (data) {
 				point.addData(data);
 				map.addLayer(point);
 				map.fitBounds(point.getBounds());
